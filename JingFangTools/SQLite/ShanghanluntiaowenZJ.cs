@@ -14,6 +14,8 @@ namespace JingFangTools.SQLite
         {
             //创建数据库实例，指定文件位置 
             SQLiteConnection conn = new SQLiteConnection(SqliteConn.dbPath);
+
+           
             //打开数据库，若文件不存在会自动创建 
             conn.Open();
             //查询去重复方子只显示一条，且不能为空名的
